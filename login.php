@@ -1,37 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Site</title>
-<link rel="stylesheet" href="css/formato.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
 </head>
 <body>
-<div id="menu">
-<ul class="links_menu">
-    <li><a href="index.php">Home</a></li>
-    <li><a href="postagem.php">Postagems</a></li>
-    <li><a href="scripts_css.php">Srcipts CSS</a></li>
-    <li><a href="contato.php">Contato</a></li>
-    
 
-</ul>
-<ul>
-    <li><a href="form_cadastro.php" class="login_cad">Não possui cadastro? então crie o seu aqui</a></li>
-</ul>
-
-    </div>
-<br><br>
-    <div id="box_from">
+<div class="container col-11 col-md-9" id="form-container">
+   <div class="row align-items-center gx-5">
+      <div class="col-md-6 order-md-2">
+      <h2>Faça o login para continuar</h2>
         <form action="logar.php" method="post" enctype="multipart/form-data">
-            <h1 class="titulos" style="margin-left: 43%">Tela de Login</h1>
-            <input type="text" name="email" placeholder="Email" required class="campos_cad">
-            <input type="password" name="senha" placeholder="Senha" required class="campos_cad">
-                
-            <div id="botoes">
-                <input type="submit" value="Logar" class="bt_cad">
-                <input type="reset" value="limpar" class="bt_cad">   
-            </div>
-          
-        </form>
-    </div>
+        <div class="form-floating mb-3">
+            <input type="text" name="email" placeholder="Email" required class="form-control">
+            <label for="email" class="form-label">Digite seu email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" name="senha" placeholder="Senha" required class="form-control">
+            <label name="senha" class="form-label">Senha</label>
+        </div>
+             <input type="submit" value="Logar" class="btn btn-primary btt">
+          </form>         
+      </div>
+      <div class="col-md-6">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <img src="imagem/login.svg" alt="Tela de cadastro" class="img-fluid">
+                    </div>
+                    <div class="col-12" id="link-container">
+                        <a href="form_cadastro.php">Não possue cadastro? crie um aqui.</a>
+                    </div>
+                </div>
+            </div> 
+   </div>
+</div>
     
 </body>
 

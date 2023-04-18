@@ -84,3 +84,17 @@ body{
     text-align: center;
     padding-top: 50px;
 }
+
+.secondary-bg-color{
+    background-color: rgb(160, 22, 22);
+}
+
+.li-color{
+    color: white;
+}
+
+#foto-pf{
+    width: 60px;
+    height:60px;
+    float: right;
+}
